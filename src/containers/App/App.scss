@@ -1,0 +1,36 @@
+@import 'const';
+
+.container {
+  width: 844px;
+  margin: 40px auto;
+  border-top: 1px solid $vitalGreen10;
+  padding-top: 24px;
+}
+
+.filter {
+  margin-bottom: 28px;
+}
+
+.title {
+  margin-bottom: 16px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+  color: $vitalGreen90;
+  margin-top: 0;
+}
+
+.info {
+  line-height: 24px;
+  color: $vitalGreen90;
+  display: flex;
+  align-items: center;
+  margin-bottom: 29px;
+}
+
+.info-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+}

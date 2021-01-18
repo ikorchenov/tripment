@@ -1,0 +1,20 @@
+@import 'const';
+
+.item {
+  padding: 8px 16px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $vitalGreen5;
+  }
+}
+
+.search-wrapper {
+  padding: 0 16px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.search {
+  width: 100%;
+}

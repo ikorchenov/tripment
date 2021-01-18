@@ -1,0 +1,20 @@
+@import 'const';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@800&display=swap');
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  color: $vitalGreen90;
+  letter-spacing: -0.3px;
+  font-size: 16px;
+}
+
+* {
+  font-family: inherit;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:global(.overflow-hidden) {
+  overflow: hidden;
+}

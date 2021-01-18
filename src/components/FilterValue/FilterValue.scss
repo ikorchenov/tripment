@@ -1,0 +1,30 @@
+@import 'const';
+
+.filter-value {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.filter-value {
+  padding-right: 4px;
+}
+
+.value {
+  position: relative;
+  margin-right: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.counter {
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.close {
+  width: 16px;
+  height: 16px;
+  margin-left: auto;
+}

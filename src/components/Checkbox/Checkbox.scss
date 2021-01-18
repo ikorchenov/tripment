@@ -1,0 +1,44 @@
+@import 'const';
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.box {
+  border: 2px solid $vitalGreen50;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-color: $clearWhite;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  transition: 0.3s;
+
+  &:hover {
+    background: transparent;
+    transition-delay: 0.1s;
+  }
+
+  &.checked {
+    border-color: $vitalGreen90;
+    background-color: $vitalGreen90;
+  }
+}
+
+.box-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.control {
+  display: none;
+}
+
+.ripple {
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

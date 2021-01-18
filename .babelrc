@@ -1,0 +1,32 @@
+{
+  "presets": [
+    "@babel/preset-react",
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions"],
+          "node": "current"
+        }
+      }
+    ],
+    "@babel/typescript"
+  ],
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    [
+      "react-css-modules",
+      {
+        "filetypes": {
+          ".scss": {
+            "syntax": "postcss-scss"
+          }
+        },
+        "handleMissingStyleName": "ignore",
+        "generateScopedName": "[name]__[local]",
+        "autoResolveMultipleImports": true,
+        "context": "./src"
+      }
+    ]
+  ]
+}

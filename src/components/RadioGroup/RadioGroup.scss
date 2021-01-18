@@ -1,0 +1,10 @@
+@import 'const';
+
+.item {
+  padding: 8px 16px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $vitalGreen5;
+  }
+}

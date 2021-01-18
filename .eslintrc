@@ -1,0 +1,62 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "parser": "babel-eslint",
+  "extends": [
+    "prettier",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "prettier", "react-hooks", "import"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["node_modules", "src"]
+      }
+    }
+  },
+  "overrides": [
+    {
+      "files": ["**/*.ts?(x)"],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "ecmaFeatures": {
+          "jsx": true
+        },
+        "warnOnUnsupportedTypeScriptVersion": true
+      },
+      "rules": {
+        "no-unused-vars": "off",
+        "no-useless-constructor": "off",
+        "no-empty-function": "off",
+        "@typescript-eslint/no-unused-vars": ["error", { "args": "none" }],
+        "@typescript-eslint/no-useless-constructor": ["error"],
+        "@typescript-eslint/explicit-module-boundary-types": "off"
+      }
+    }
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error"
+  }
+}

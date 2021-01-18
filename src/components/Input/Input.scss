@@ -1,0 +1,33 @@
+@import 'const';
+
+.wrapper {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  background: $clearWhite;
+  border: 1px solid $vitalGreen30;
+  border-radius: 4px;
+  line-height: 24px;
+  padding: 12px 8px;
+  font-size: inherit;
+
+  &::placeholder {
+    color: $vitalGreen50;
+  }
+
+  &.search {
+    padding-right: 48px;
+  }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
