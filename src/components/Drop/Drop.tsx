@@ -4,7 +4,6 @@ import FilterValue from 'components/FilterValue';
 import Icon from 'components/Icon';
 import Ripple from 'components/Ripple';
 import { useClickOutside } from 'hooks/useClickOutside';
-import { debounce } from 'lodash';
 import { CSSProperties, FC, memo, ReactNode, SyntheticEvent, useCallback, useEffect, useRef, useState } from 'react';
 
 import './Drop.scss';
@@ -48,7 +47,7 @@ const Drop: FC<Props> = ({
     setDropPosition({});
 
     if (onClose) {
-      debounce(onClose, 0)();
+      setTimeout(onClose, 0);
     }
   }, [onClose]);
 
